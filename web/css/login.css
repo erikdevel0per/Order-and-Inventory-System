@@ -1,0 +1,149 @@
+.tela-login {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.login {
+  width: min(880px, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--painel);
+  border: 1px solid var(--linha);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.login-lado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 36px;
+  background: var(--tinta);
+  color: #e6eaee;
+}
+
+.login-lado p {
+  max-width: 30ch;
+  font-size: var(--t-lg);
+  font-stretch: 108%;
+  line-height: 1.35;
+}
+
+.login-esteira {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  padding-left: 22px;
+}
+
+.login-esteira::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  bottom: 4px;
+  width: 6px;
+  border-radius: 3px;
+  background: repeating-linear-gradient(45deg, #f5b800 0 12px, #e6eaee 12px 18px);
+  transform-origin: top;
+  animation: fita 0.9s ease-out both;
+}
+
+.login-esteira span {
+  position: relative;
+  font-size: var(--t-sm);
+  font-weight: 560;
+  color: #c9d0d7;
+  animation: aparecer 0.3s ease-out both;
+}
+
+.login-esteira span::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: var(--cor-status);
+  box-shadow: 0 0 0 3px var(--tinta);
+}
+
+.login-esteira span:nth-child(2) { animation-delay: 0.12s; }
+.login-esteira span:nth-child(3) { animation-delay: 0.24s; }
+.login-esteira span:nth-child(4) { animation-delay: 0.36s; }
+.login-esteira span:nth-child(5) { animation-delay: 0.48s; }
+.login-esteira span:nth-child(6) { animation-delay: 0.6s; }
+
+.login-form {
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  padding: 44px 40px;
+}
+
+.login-form h1 {
+  font-size: var(--t-3xl);
+  font-stretch: 120%;
+  font-weight: 760;
+  letter-spacing: -0.03em;
+}
+
+.login-form > p.mudo {
+  margin-top: -14px;
+}
+
+.login-form form {
+  display: grid;
+  gap: 14px;
+}
+
+.login-form .botao {
+  min-height: 44px;
+  margin-top: 6px;
+}
+
+.senha-caixa {
+  position: relative;
+  display: block;
+}
+
+.senha-caixa input {
+  padding-right: 44px;
+}
+
+.senha-caixa .icone-botao {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+
+.login-rodape {
+  font-size: var(--t-xs);
+}
+
+@keyframes fita {
+  from { transform: scaleY(0); }
+}
+
+@media (max-width: 720px) {
+  .login {
+    grid-template-columns: 1fr;
+  }
+
+  .login-lado {
+    padding: 24px;
+    gap: 18px;
+  }
+
+  .login-esteira {
+    display: none;
+  }
+
+  .login-form {
+    padding: 28px 24px;
+  }
+}
