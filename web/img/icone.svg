@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Doca">
+  <rect width="64" height="64" rx="12" fill="#1b2430"/>
+  <path d="M14 46V27l18-10 18 10v19" fill="none" stroke="#f2f4f3" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="22" y="32" width="9" height="9" rx="1.5" fill="#f5b800"/>
+  <rect x="33" y="32" width="9" height="9" rx="1.5" fill="#f2f4f3"/>
+  <rect x="27.5" y="23" width="9" height="8" rx="1.5" fill="#f2f4f3"/>
+  <path d="M10 49h44" stroke="#f5b800" stroke-width="4" stroke-linecap="round"/>
+</svg>
