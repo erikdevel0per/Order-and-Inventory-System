@@ -8,6 +8,7 @@ dados/
 *.sqlite3
 *.dump
 *.log
+resultado-testes.txt
 credenciais*.txt
 senha*.txt
 

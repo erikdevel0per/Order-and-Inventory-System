@@ -387,6 +387,23 @@ alembic upgrade head && alembic check   # migrações batem com os modelos
 
 A integração contínua (`.github/workflows/ci.yml`) roda lint, a suíte completa em SQLite **e** em PostgreSQL, o ciclo de migrações, a geração dos dados de demonstração e o build da imagem Docker.
 
+### Relatório diário automático
+
+Todo dia, às 9h (horário de Brasília), o workflow `.github/workflows/relatorio-diario.yml`:
+
+1. roda a suíte de testes;
+2. simula um novo dia de operação com dados fictícios (semente diferente a cada dia);
+3. publica [`docs/relatorio-diario.md`](docs/relatorio-diario.md) com a saúde do código, indicadores do mês, pedidos por etapa, mais vendidos, reposição sugerida e o histórico dos últimos 30 dias.
+
+O relatório também pode ser gerado na hora pela aba **Actions → Relatório diário → Run workflow**, ou localmente:
+
+```bash
+pytest -q > resultado-testes.txt
+python -m scripts.relatorio_diario
+```
+
+Quem fizer um fork pode definir as variáveis `GIT_AUTOR_NOME` e `GIT_AUTOR_EMAIL` em **Settings → Secrets and variables → Actions → Variables** para assinar os commits automáticos. Sem elas, os commits saem em nome do `github-actions[bot]`.
+
 ## Estrutura de pastas
 
 ```
@@ -402,7 +419,7 @@ A integração contínua (`.github/workflows/ci.yml`) roda lint, a suíte comple
 │   └── rotas/             # endpoints da API
 ├── web/                   # painel (HTML, CSS, JS, fonte e ícone)
 ├── alembic/               # migrações do banco
-├── scripts/               # gerador de dados fictícios
+├── scripts/               # gerador de dados fictícios e relatório diário
 ├── tests/                 # 80 testes (unidade, API e concorrência)
 ├── docs/                  # capturas de tela e guia de publicação
 ├── Dockerfile · docker-compose.yml
