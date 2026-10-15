@@ -15,6 +15,8 @@
 
 ---
 
+> **Manual completo:** [`Manual-Doca.pdf`](Manual-Doca.pdf) explica instalação, configuração, perfis, todas as telas, regras de pedidos e estoque, arquitetura, API, banco de dados e solução de problemas, passo a passo (cópia em [`docs/`](docs/Manual-Doca.pdf)).
+
 > **Dados fictícios:** todos os clientes, fornecedores e produtos são gerados por script. Veja [Dados fictícios](#dados-fictícios).
 
 <p align="center">
