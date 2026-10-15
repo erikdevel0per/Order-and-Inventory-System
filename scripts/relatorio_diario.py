@@ -104,6 +104,13 @@ def montar(agora: datetime, testes: dict, painel: dict, giro: dict) -> str:
         situacao_testes = "todos passaram"
 
     linhas = [
+        '<p align="center">',
+        "  <picture>",
+        '    <source media="(prefers-color-scheme: dark)" srcset="img/logo/logo-escuro.svg">',
+        '    <img src="img/logo/logo-claro.svg" alt="Logo do Doca" width="72">',
+        "  </picture>",
+        "</p>",
+        "",
         "# Relatório diário",
         "",
         f"Gerado automaticamente em {data} às {agora.strftime('%H:%M')} (horário de Brasília) pelo GitHub Actions.",

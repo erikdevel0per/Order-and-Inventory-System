@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="img/logo/logo-escuro.svg">
+    <img src="img/logo/logo-claro.svg" alt="Logo do Doca" width="72">
+  </picture>
+</p>
+
 # Publicar no GitHub sem expor dados pessoais
 
 Siga na ordem. Cada fase termina com uma conferência.

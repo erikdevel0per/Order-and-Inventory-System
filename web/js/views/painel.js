@@ -96,7 +96,7 @@ export async function render(alvo, ctx) {
         bloco(
           "Faturamento dos últimos 30 dias",
           graficoBarras(d.vendas_30_dias, { valor: (v) => v.receita, rotulo: (v) => v.rotulo }),
-          { descricao: `${fmt.moeda(total30)} no período; a barra amarela é hoje.` },
+          { descricao: `${fmt.moeda(total30)} no período; a barra em destaque é hoje.` },
         ),
         bloco(
           "Mais vendidos em 30 dias",

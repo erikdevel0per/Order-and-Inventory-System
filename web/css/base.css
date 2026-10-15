@@ -8,23 +8,23 @@
 }
 
 :root {
-  --papel: #f2f4f3;
-  --painel: #ffffff;
-  --painel-2: #f8f9f9;
-  --tinta: #1b2430;
-  --cinza: #5e6a75;
-  --cinza-claro: #8a949e;
-  --linha: #d9dee2;
-  --linha-forte: #c3cad0;
-  --fita: #f5b800;
-  --fita-escura: #b38600;
-  --link: #2456c7;
+  --papel: #e8e8e8;
+  --painel: #f6f4f3;
+  --painel-2: #efebea;
+  --tinta: #000000;
+  --cinza: #5e5454;
+  --cinza-claro: #7a6e6e;
+  --linha: #d9d1ce;
+  --linha-forte: #bab7b5;
+  --fita: #ab9d9d;
+  --fita-escura: #7a6b6b;
+  --link: #000000;
   --perigo: #b4413a;
   --sucesso: #2e8540;
   --aviso: #a8660b;
-  --foco: #2456c7;
+  --foco: #000000;
 
-  --st-rascunho: #8a949e;
+  --st-rascunho: #8a7e7e;
   --st-confirmado: #2456c7;
   --st-separado: #6a4fc8;
   --st-faturado: #0f8a7e;
@@ -43,28 +43,28 @@
 
   --raio-sm: 4px;
   --raio: 8px;
-  --sombra-flutuante: 0 12px 32px rgb(27 36 48 / 0.16), 0 2px 6px rgb(27 36 48 / 0.08);
+  --sombra-flutuante: 0 12px 32px rgb(0 0 0 / 0.16), 0 2px 6px rgb(0 0 0 / 0.08);
   --lateral: 228px;
   color-scheme: light;
 }
 
 :root[data-tema="escuro"] {
-  --papel: #161b21;
-  --painel: #1e252d;
-  --painel-2: #232b34;
-  --tinta: #e6eaee;
-  --cinza: #a3adb7;
-  --cinza-claro: #7d8894;
-  --linha: #313a44;
-  --linha-forte: #414c58;
-  --fita: #f5c02e;
-  --fita-escura: #f5c02e;
-  --link: #7ea6ff;
+  --papel: #000000;
+  --painel: #141212;
+  --painel-2: #1c1919;
+  --tinta: #e8e8e8;
+  --cinza: #bab7b5;
+  --cinza-claro: #ab9d9d;
+  --linha: #2b2626;
+  --linha-forte: #3d3636;
+  --fita: #ab9d9d;
+  --fita-escura: #d9d1ce;
+  --link: #d9d1ce;
   --perigo: #ef7f76;
   --sucesso: #6cc581;
   --aviso: #e8a948;
-  --foco: #7ea6ff;
-  --st-rascunho: #8a949e;
+  --foco: #d9d1ce;
+  --st-rascunho: #ab9d9d;
   --st-confirmado: #6f9bff;
   --st-separado: #a28bf2;
   --st-faturado: #3cc2b3;
@@ -189,7 +189,7 @@ textarea {
 }
 
 .botao:hover {
-  filter: brightness(1.15);
+  opacity: 0.86;
 }
 
 .botao:disabled {
@@ -205,7 +205,7 @@ textarea {
 
 .botao.secundario:hover {
   background: var(--painel-2);
-  filter: none;
+  opacity: 1;
 }
 
 .botao.perigo {
@@ -851,7 +851,7 @@ tfoot td {
 }
 
 .grafico .barra:hover {
-  fill: var(--link);
+  fill: var(--fita-escura);
 }
 
 .grafico .eixo {
@@ -1110,7 +1110,7 @@ tfoot td {
   position: fixed;
   inset: 0;
   z-index: 50;
-  background: rgb(18 24 31 / 0.42);
+  background: rgb(0 0 0 / 0.42);
   display: flex;
   justify-content: flex-end;
   animation: aparecer 0.16s ease-out;

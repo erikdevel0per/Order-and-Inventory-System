@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="img/logo/logo-escuro.svg">
+    <img src="img/logo/logo-claro.svg" alt="Logo do Doca" width="72">
+  </picture>
+</p>
+
 # Relatório diário
 
 Gerado automaticamente em 14/10/2026 às 11:40 (horário de Brasília) pelo GitHub Actions.

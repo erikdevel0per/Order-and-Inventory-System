@@ -21,8 +21,8 @@
   justify-content: space-between;
   gap: 32px;
   padding: 36px;
-  background: var(--tinta);
-  color: #e6eaee;
+  background: #000000;
+  color: #e8e8e8;
 }
 
 .login-lado p {
@@ -47,7 +47,7 @@
   bottom: 4px;
   width: 6px;
   border-radius: 3px;
-  background: repeating-linear-gradient(45deg, #f5b800 0 12px, #e6eaee 12px 18px);
+  background: repeating-linear-gradient(45deg, #ab9d9d 0 12px, #e8e8e8 12px 18px);
   transform-origin: top;
   animation: fita 0.9s ease-out both;
 }
@@ -56,7 +56,7 @@
   position: relative;
   font-size: var(--t-sm);
   font-weight: 560;
-  color: #c9d0d7;
+  color: #bab7b5;
   animation: aparecer 0.3s ease-out both;
 }
 
@@ -69,7 +69,7 @@
   height: 14px;
   border-radius: 4px;
   background: var(--cor-status);
-  box-shadow: 0 0 0 3px var(--tinta);
+  box-shadow: 0 0 0 3px #000000;
 }
 
 .login-esteira span:nth-child(2) { animation-delay: 0.12s; }
