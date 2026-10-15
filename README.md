@@ -389,7 +389,7 @@ A integração contínua (`.github/workflows/ci.yml`) roda lint, a suíte comple
 
 ### Relatório diário automático
 
-Todo dia, às 9h (horário de Brasília), o workflow `.github/workflows/relatorio-diario.yml`:
+Todo dia, às 9h17 (horário de Brasília), o workflow `.github/workflows/relatorio-diario.yml`:
 
 1. roda a suíte de testes;
 2. simula um novo dia de operação com dados fictícios (semente diferente a cada dia);
