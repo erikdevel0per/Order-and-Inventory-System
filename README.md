@@ -20,7 +20,7 @@
 > **Dados fictícios:** todos os clientes, fornecedores e produtos são gerados por script. Veja [Dados fictícios](#dados-fictícios).
 
 <p align="center">
-  <img src="docs/img/painel.png" alt="Painel com a esteira de pedidos e indicadores">
+  <img src="docs/img/painel.png" alt="Painel com os pedidos por etapa e os indicadores do mês">
 </p>
 
 ## O que o Doca faz
@@ -32,6 +32,25 @@
 - **Relatórios** de vendas por dia, semana, mês, categoria, produto, vendedor, cliente ou UF, curva ABC, giro, cobertura em dias e sugestão de compra, com exportação em CSV.
 - **Quatro perfis de acesso**, senha provisória com troca obrigatória e trilha de auditoria.
 - **Tema claro e escuro**, layout responsivo para celular.
+
+## Interface
+
+Visual sóbrio, pensado para operação diária e tabelas densas:
+
+- Fundo cinza-claro, painéis brancos e bordas finas. O azul-marinho `#2B4C7E` é o único destaque: item ativo do menu, barras dos gráficos, abas e foco do teclado.
+- Fonte Archivo em largura normal, incluída no projeto (sem CDN), com números tabulares nas tabelas.
+- Pedidos por etapa numa faixa única com a contagem de cada status. As seis cores de situação ficam só nos marcadores, para diferenciar as etapas num relance.
+- Cantos de 4 a 6 px, filtros em botões retangulares e cabeçalhos de tabela em cinza suave.
+- Tema escuro com a mesma estrutura e contraste ajustado.
+
+| Cor | Uso |
+|---|---|
+| `#F3F4F6` | Fundo das páginas |
+| `#FFFFFF` | Painéis, tabelas e formulários |
+| `#E1E4E8` | Bordas e divisórias |
+| `#5B626B` | Textos de apoio |
+| `#16191D` | Texto e botões principais |
+| `#2B4C7E` | Destaque, gráficos e foco |
 
 ## Como o Doca evita venda dupla
 

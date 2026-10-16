@@ -10,18 +10,11 @@ const ETAPAS = [
   ["ENTREGUE", "Concluídos"],
 ];
 
-function saudacao(nome) {
-  const hora = Number(new Intl.DateTimeFormat("pt-BR", { hour: "numeric", hour12: false, timeZone: "America/Sao_Paulo" }).format(new Date()));
-  const periodo = hora < 12 ? "Bom dia" : hora < 18 ? "Boa tarde" : "Boa noite";
-  return `${periodo}, ${nome.split(" ")[0]}`;
-}
-
 function esteira(d) {
   const etapas = ETAPAS.map(([status, dica]) =>
     h(
       "a",
       { class: `etapa st-${status}`, href: `#/pedidos?status=${status}` },
-      h("span", { class: "etapa-no", "aria-hidden": "true" }),
       h("span", { class: "etapa-quantidade", text: fmt.numero(d.pedidos_por_status[status] || 0) }),
       h("span", { class: "etapa-nome", text: STATUS_PEDIDO[status] }),
       h("span", { class: "etapa-dica", text: dica }),
@@ -84,7 +77,7 @@ export async function render(alvo, ctx) {
   const total30 = d.vendas_30_dias.reduce((s, v) => s + v.receita, 0);
   const acoes = ctx.pode("gerente", "vendedor") ? [link("Novo pedido", "#/pedidos/novo")] : [];
   alvo.append(
-    cabecalhoPagina(saudacao(ctx.usuario.nome), `Situação em ${fmt.data(d.referencia)}.`, acoes),
+    cabecalhoPagina("Painel", `Situação em ${fmt.data(d.referencia)}`, acoes),
     h(
       "div",
       { class: "pilha" },
@@ -96,7 +89,7 @@ export async function render(alvo, ctx) {
         bloco(
           "Faturamento dos últimos 30 dias",
           graficoBarras(d.vendas_30_dias, { valor: (v) => v.receita, rotulo: (v) => v.rotulo }),
-          { descricao: `${fmt.moeda(total30)} no período; a barra em destaque é hoje.` },
+          { descricao: `${fmt.moeda(total30)} no período. A barra cinza é hoje, ainda em andamento.` },
         ),
         bloco(
           "Mais vendidos em 30 dias",
