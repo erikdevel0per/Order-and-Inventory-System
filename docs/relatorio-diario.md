@@ -7,7 +7,7 @@
 
 # Relatório diário
 
-Gerado automaticamente em 16/10/2026 às 09:50 (horário de Brasília) pelo GitHub Actions.
+Gerado automaticamente em 16/10/2026 às 13:41 (horário de Brasília) pelo GitHub Actions.
 
 A operação abaixo é **simulada com dados fictícios**, gerados a cada dia com uma semente diferente, para mostrar o sistema funcionando de ponta a ponta.
 
@@ -19,56 +19,54 @@ A operação abaixo é **simulada com dados fictícios**, gerados a cada dia com
 | Testes que passaram | 79 |
 | Testes com falha | 0 |
 | Testes ignorados | 1 |
-| Duração | 8,3 s |
+| Duração | 8,9 s |
 
 ## Operação simulada do mês
 
 | Indicador | Valor |
 |---|---|
-| Faturamento do mês | R$ 173.207,86 |
-| Pedidos faturados | 68 |
-| Ticket médio | R$ 2.547,17 |
-| Estoque a preço de custo | R$ 242.852,10 |
-| Unidades em estoque | 2.854 |
-| Produtos abaixo do mínimo | 6 |
+| Faturamento do mês | R$ 207.348,74 |
+| Pedidos faturados | 67 |
+| Ticket médio | R$ 3.094,76 |
+| Estoque a preço de custo | R$ 286.832,63 |
+| Unidades em estoque | 3.208 |
+| Produtos abaixo do mínimo | 7 |
 
 ### Pedidos por etapa
 
 | Etapa | Pedidos |
 |---|---:|
-| Rascunho | 5 |
+| Rascunho | 6 |
 | Confirmado | 4 |
-| Separado | 4 |
-| Faturado | 4 |
-| Enviado | 7 |
-| Entregue | 287 |
-| Cancelado | 33 |
+| Separado | 5 |
+| Faturado | 2 |
+| Enviado | 8 |
+| Entregue | 282 |
+| Cancelado | 39 |
 
 ### Mais vendidos em 30 dias
 
 | Produto | Unidades | Receita | Margem |
 |---|---:|---:|---:|
-| Monitor LED 24 pol. | 114 | R$ 93.105,91 | 31,6% |
-| SSD 480 GB Essencial preto | 170 | R$ 47.671,61 | 29,7% |
-| Teclado mecânico ABNT2 | 42 | R$ 20.144,10 | 47,9% |
-| Mochila de trilha 30 L | 65 | R$ 18.044,15 | 35,1% |
-| Jogo de panelas 5 peças | 48 | R$ 16.854,64 | 33,4% |
+| Monitor LED 24 pol. | 102 | R$ 82.566,10 | 30,6% |
+| SSD 480 GB Essencial preto | 124 | R$ 35.027,78 | 31,5% |
+| Parafusadeira a bateria | 60 | R$ 22.306,31 | 46,0% |
+| Smartwatch esportivo | 49 | R$ 17.106,66 | 47,8% |
+| Hub USB-C 7 em 1 Compacto azul | 80 | R$ 16.568,49 | 34,1% |
 
 ### Reposição sugerida
 
 | Produto | Situação | Disponível | Cobertura | Comprar |
 |---|---|---:|---:|---:|
-| Nível de bolha 40 cm | Sem saldo | 0 | 0 dias | 30 |
-| SSD 480 GB Essencial preto | Acaba antes da reposição | 72 | 12 dias | 132 |
-| Monitor LED 24 pol. | Acaba antes da reposição | 24 | 6 dias | 81 |
-| Etiquetas adesivas cx 1000 | Acaba antes da reposição | 26 | 9 dias | 71 |
-| Rodo 60 cm | Acaba antes da reposição | 46 | 13 dias | 64 |
-| Parafusadeira a bateria | Acaba antes da reposição | 5 | 5 dias | 43 |
-| Lápis de cor 36 cores | Acaba antes da reposição | 3 | 3 dias | 30 |
+| Webcam Full HD Compacto azul | Sem saldo | 0 | 0 dias | 15 |
+| Rodo 60 cm | Acaba antes da reposição | 54 | 14 dias | 65 |
+| Lápis de cor 36 cores | Acaba antes da reposição | 2 | 1 dias | 54 |
+| Furadeira de impacto | Acaba antes da reposição | 3 | 3 dias | 34 |
+| Faqueiro inox 24 peças | Acaba antes da reposição | 3 | 4 dias | 28 |
 
 ## Histórico (últimos 30 dias)
 
 | Data | Testes OK | Faturamento do mês | Pedidos faturados | Abaixo do mínimo |
 |---|---:|---:|---:|---:|
-| 16/10/2026 | 79/79 | R$ 173.207,86 | 68 | 6 |
+| 16/10/2026 | 79/79 | R$ 207.348,74 | 67 | 7 |
 | 14/10/2026 | 79/79 | R$ 83.140,81 | 48 | 7 |
