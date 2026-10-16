@@ -7,7 +7,7 @@
 
 # Relatório diário
 
-Gerado automaticamente em 14/10/2026 às 11:40 (horário de Brasília) pelo GitHub Actions.
+Gerado automaticamente em 16/10/2026 às 09:50 (horário de Brasília) pelo GitHub Actions.
 
 A operação abaixo é **simulada com dados fictícios**, gerados a cada dia com uma semente diferente, para mostrar o sistema funcionando de ponta a ponta.
 
@@ -19,53 +19,56 @@ A operação abaixo é **simulada com dados fictícios**, gerados a cada dia com
 | Testes que passaram | 79 |
 | Testes com falha | 0 |
 | Testes ignorados | 1 |
-| Duração | 13,2 s |
+| Duração | 8,3 s |
 
 ## Operação simulada do mês
 
 | Indicador | Valor |
 |---|---|
-| Faturamento do mês | R$ 83.140,81 |
-| Pedidos faturados | 48 |
-| Ticket médio | R$ 1.732,10 |
-| Estoque a preço de custo | R$ 301.880,76 |
-| Unidades em estoque | 2.929 |
-| Produtos abaixo do mínimo | 7 |
+| Faturamento do mês | R$ 173.207,86 |
+| Pedidos faturados | 68 |
+| Ticket médio | R$ 2.547,17 |
+| Estoque a preço de custo | R$ 242.852,10 |
+| Unidades em estoque | 2.854 |
+| Produtos abaixo do mínimo | 6 |
 
 ### Pedidos por etapa
 
 | Etapa | Pedidos |
 |---|---:|
-| Rascunho | 6 |
-| Confirmado | 1 |
-| Separado | 5 |
-| Faturado | 2 |
-| Enviado | 5 |
-| Entregue | 293 |
-| Cancelado | 35 |
+| Rascunho | 5 |
+| Confirmado | 4 |
+| Separado | 4 |
+| Faturado | 4 |
+| Enviado | 7 |
+| Entregue | 287 |
+| Cancelado | 33 |
 
 ### Mais vendidos em 30 dias
 
 | Produto | Unidades | Receita | Margem |
 |---|---:|---:|---:|
-| Monitor LED 24 pol. | 20 | R$ 25.650,90 | 50,7% |
-| Cafeteira elétrica | 90 | R$ 22.404,38 | 50,5% |
-| Caixa de som portátil | 68 | R$ 20.420,75 | 39,8% |
-| Monitor LED 24 pol. Essencial preto | 18 | R$ 17.198,07 | 51,3% |
-| Teclado mecânico ABNT2 Essencial azul | 41 | R$ 17.010,17 | 42,8% |
+| Monitor LED 24 pol. | 114 | R$ 93.105,91 | 31,6% |
+| SSD 480 GB Essencial preto | 170 | R$ 47.671,61 | 29,7% |
+| Teclado mecânico ABNT2 | 42 | R$ 20.144,10 | 47,9% |
+| Mochila de trilha 30 L | 65 | R$ 18.044,15 | 35,1% |
+| Jogo de panelas 5 peças | 48 | R$ 16.854,64 | 33,4% |
 
 ### Reposição sugerida
 
 | Produto | Situação | Disponível | Cobertura | Comprar |
 |---|---|---:|---:|---:|
-| Mouse sem fio | Sem saldo | 0 | 0 dias | 123 |
-| Papel sulfite A4 resma Essencial branco | Acaba antes da reposição | 3 | 2 dias | 64 |
-| Mochila de trilha 30 L | Acaba antes da reposição | 4 | 4 dias | 48 |
-| Organizador de mesa | Acaba antes da reposição | 3 | 3 dias | 31 |
-| Memória RAM 16 GB | Acaba antes da reposição | 4 | 8 dias | 30 |
+| Nível de bolha 40 cm | Sem saldo | 0 | 0 dias | 30 |
+| SSD 480 GB Essencial preto | Acaba antes da reposição | 72 | 12 dias | 132 |
+| Monitor LED 24 pol. | Acaba antes da reposição | 24 | 6 dias | 81 |
+| Etiquetas adesivas cx 1000 | Acaba antes da reposição | 26 | 9 dias | 71 |
+| Rodo 60 cm | Acaba antes da reposição | 46 | 13 dias | 64 |
+| Parafusadeira a bateria | Acaba antes da reposição | 5 | 5 dias | 43 |
+| Lápis de cor 36 cores | Acaba antes da reposição | 3 | 3 dias | 30 |
 
 ## Histórico (últimos 30 dias)
 
 | Data | Testes OK | Faturamento do mês | Pedidos faturados | Abaixo do mínimo |
 |---|---:|---:|---:|---:|
+| 16/10/2026 | 79/79 | R$ 173.207,86 | 68 | 6 |
 | 14/10/2026 | 79/79 | R$ 83.140,81 | 48 | 7 |
