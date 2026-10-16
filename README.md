@@ -252,16 +252,6 @@ ruff check . && ruff format --check .
 
 A integração contínua ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) roda lint, a suíte completa em SQLite **e** em PostgreSQL, o ciclo de migrações, a geração dos dados de demonstração e o build da imagem Docker.
 
-## Relatório diário automático
-
-O workflow [`.github/workflows/relatorio-diario.yml`](.github/workflows/relatorio-diario.yml) roda todos os dias às **9h17** (horário de Brasília): executa os testes, simula um novo dia de operação e publica [`docs/relatorio-diario.md`](docs/relatorio-diario.md) com a saúde do código, os indicadores do mês e o histórico dos últimos 30 dias. Para ativar no seu fork:
-
-1. Em **Settings › Actions › General › Workflow permissions**, marque **Read and write permissions** e salve.
-2. Opcional: em **Settings › Secrets and variables › Actions › Variables**, crie `GIT_AUTOR_NOME` e `GIT_AUTOR_EMAIL` para assinar os commits. Sem elas, os commits saem em nome do `github-actions[bot]`.
-3. Em **Actions › Relatório diário**, clique em **Run workflow** para testar na hora.
-
-O GitHub pode atrasar execuções agendadas em alguns minutos nos horários de pico.
-
 ## Dados fictícios
 
 O script `scripts/popular_banco.py` simula meses de operação passando pelas mesmas regras da API, então reservas, baixas e custos são coerentes entre si. Nomes são combinações aleatórias, CPFs e CNPJs só têm dígitos verificadores válidos, e-mails usam domínios reservados para exemplos (`example.com`) e códigos de barras usam o prefixo 2, de circulação restrita. Qualquer semelhança com pessoas ou empresas reais é coincidência.
