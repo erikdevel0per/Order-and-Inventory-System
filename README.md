@@ -2,7 +2,7 @@
   <img src="docs/img/logo/logo-fundo-preto.png" width="200" alt="Doca">
 </p>
 
-<h1 align="center">Doca<br><sub><sup><sup><sub>Feito por Erik L. Pimenta</sub></sup></sup></sub></h1>
+<h1 align="center">Doca<br><sub><sup><sup><sub>Copyright (©) 2026 Erik Pimenta</sub></sup></sup></sub></h1>
 
 <p align="center">
   Sistema de pedidos de venda, compras e controle de estoque multi-depósito, com API REST e painel web com login.<br>
